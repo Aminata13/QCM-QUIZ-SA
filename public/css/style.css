@@ -1,0 +1,313 @@
+:root {
+  --blue: #4e73df;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #e74a3b;
+  --orange: #fd7e14;
+  --yellow: #f6c23e;
+  --green: #1cc88a;
+  --teal: #20c9a6;
+  --cyan: #36b9cc;
+  --white: #fff;
+  --gray: #858796;
+  --gray-dark: #5a5c69;
+  --primary: #4e73df;
+  --secondary: #858796;
+  --success: #1cc88a;
+  --info: #36b9cc;
+  --warning: #f6c23e;
+  --danger: #e74a3b;
+  --light: #f8f9fc;
+  --dark: #5a5c69;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+body {
+  font-family: "Nunito";
+}
+
+.bg-gradient-primary {
+  background-color: #4e73df;
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-size: 1920px 1080px;
+}
+
+.bg-login-image {
+  background: linear-gradient(
+      213.76deg,
+      #fed201 0%,
+      rgba(255, 255, 255, 0) 63.8%
+    ),
+    #f0ba00;
+  background-image: url("../img/logo-QuizzSA.png");
+  background-position: top;
+  background-size: 210px 410px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.slogan {
+  position: absolute;
+  color: white;
+  top: 86%;
+  left: 20%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+}
+.text-gray-900 {
+  color: #3a3b45 !important;
+  font-weight: bold;
+}
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 13px;
+}
+.container-test {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 13px;
+  background-color: red;
+  width: 400px;
+}
+.card {
+  height: 90%;
+}
+.card-test {
+  width: 85%;
+  margin-left: 6%;
+}
+.row {
+  height: 100%;
+}
+
+form.user .custom-checkbox.small label {
+  line-height: 1.5rem;
+}
+
+form.user .form-control-user {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 1.3rem 1.5rem;
+}
+
+form.user .btn-user {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 0.75rem 1rem;
+}
+
+#login-form .form-group {
+  margin-bottom: 1rem;
+  width: 113%;
+  margin-left: -9%;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+#login-form button {
+  margin-top: 3rem;
+  width: 111%;
+  margin-left: -8%;
+}
+
+#error, #upload-error, #signup-error {
+  color: #dc3545;
+  font-size: 0.8rem;
+  margin-left: 7%;
+  font-weight: bold;
+}
+#upload-error, #signup-error {
+  margin-top: 4%;
+  margin-left: 12%;
+}
+#signup-error {
+  margin-left: 0%;
+}
+.btn-file-text {
+  font-weight: bold;
+  margin: 2% 0% 0% 35%;
+}
+.btn-file {
+  background-color: #F0BA00;
+  border-radius: 10rem;
+  color: white;
+  padding: 0.3rem 1.6rem;
+}
+input[type="file"] {
+  display: none;
+}
+.login-link {
+  margin-left: 21%;
+}
+
+.avatar {
+  width: 100%;
+  height: 35%;
+  margin: 16% 0% 0% 7%;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #F0BA00;
+  border-radius: 50%;
+}
+.avatar-legend {
+  font-weight: bold;
+  margin: 0.4rem 0rem 0rem 2.7rem;
+}
+
+#wrapper {
+  display: flex;
+}
+.text-uppercase,
+.dropdown .dropdown-menu .dropdown-header,
+.sidebar .sidebar-heading {
+  text-transform: uppercase !important;
+}
+
+.animated--grow-in,
+.sidebar .nav-item .collapse {
+  -webkit-animation-name: growIn;
+  animation-name: growIn;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1),
+    opacity cubic-bezier(0, 1, 0.4, 1);
+  animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1),
+    opacity cubic-bezier(0, 1, 0.4, 1);
+}
+.sidebar .nav-item.dropdown .dropdown-toggle::after,
+.topbar .nav-item.dropdown .dropdown-toggle::after {
+  width: 1rem;
+  text-align: center;
+  float: right;
+  vertical-align: 0;
+  border: 0;
+  font-weight: 900;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+}
+.sidebar {
+  width: 6.5rem;
+  min-height: 100vh;
+}
+.sidebar-dark .sidebar-brand {
+  color: #fff;
+}
+
+.sidebar-dark hr.sidebar-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-dark .sidebar-heading {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar-dark .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar-dark .nav-item .nav-link i {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-dark .nav-item .nav-link:active,
+.sidebar-dark .nav-item .nav-link:focus,
+.sidebar-dark .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+.sidebar-dark .nav-item .nav-link:active i,
+.sidebar-dark .nav-item .nav-link:focus i,
+.sidebar-dark .nav-item .nav-link:hover i {
+  color: #fff;
+}
+
+.sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar-dark .nav-item.active .nav-link {
+  color: #fff;
+}
+
+.sidebar-dark .nav-item.active .nav-link i {
+  color: #fff;
+}
+
+.sidebar-dark #sidebarToggle {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-dark #sidebarToggle::after {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar-dark #sidebarToggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar-dark.toggled #sidebarToggle::after {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.d-flex {
+  display: flex !important;
+}
+#admin-container {
+  width: 90%;
+  margin: 0% auto;
+  overflow: hidden;
+}
+#admin-container .card-test {
+  margin-top: -4rem;
+}
+.question-card {
+  float: right;
+  width: 40%;
+}
+.list-question-card {
+  clear: both;
+  margin-top: 4rem;
+}
+.question-card input[type="text"] {
+  width: 10%;
+  margin-right: 0.2rem;
+}
+.question-card .nombre-questions {
+  float: left;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.dataTable_length select {
+  width: 4rem;
+  height: 2.3rem;
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
