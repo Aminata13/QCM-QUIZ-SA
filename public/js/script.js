@@ -10,6 +10,10 @@ $("#login-form").submit((event)=>{
     let $form = $("#login-form")
     let url = $form.attr("action");
     
+    console.log($form);
+    console.log(url);
+    
+    
     //activation de la classe de validation de bootstrap
     $form.addClass("was-validated");
     

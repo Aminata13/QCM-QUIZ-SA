@@ -81,3 +81,19 @@ function setUserAndAvatar($login, $password, $surname, $firstname) {
     }
 }
 
+function selectPlayers($limit, $offset) {
+    try {
+        $db = connectionDatabase();
+
+        $query = $db -> prepare("SELECT firstname, surname, score FROM users WHERE profil='player' ORDER BY score DESC LIMIT :limit OFFSET :offset");
+        $query -> bindParam("limit", $limit, PDO::PARAM_INT);
+        $query -> bindParam("offset", $offset, PDO::PARAM_INT);
+        $query -> execute();
+
+        return $query->fetchAll();
+
+    } catch(PDOException $e) {
+        exit($e -> getMessage());
+    }
+}
+

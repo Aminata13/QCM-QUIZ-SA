@@ -304,10 +304,44 @@ input[type="file"] {
   width: 4rem;
   height: 2.3rem;
 }
-option {
-  font-weight: normal;
-  display: block;
-  white-space: pre;
-  min-height: 1.2em;
-  padding: 0px 2px 1px;
+#dataTable_filter label {
+  float: right;
+  width: 50%;
+}
+#dataTable_wrapper .row {
+  padding: 1rem;
+}
+.table-responsive {
+  overflow: hidden;
+}
+.btn-next {
+  float: right;
+  margin-right: 0.3rem;
+  background-color: #F0BA00;
+  border-color: #f0ba00;
+  color: white;
+}
+.btn-previous {
+  margin-left: 0.3rem;
+  background-color: #36B9CC;
+  border-color: #36b9cc;
+  color: white;
+}
+.btn-next:hover, .btn-previous:hover {
+  color: white;
+}
+.btn-next:hover {
+  background-color: #f6c23e;
+}
+.btn-previous:hover {
+  background-color: #59bac9;
+}
+.center {
+  text-align: center;
+}
+.fa-edit {
+  color: var(--green);
+}
+.fa-lock {
+  color: var(--red);
 }
