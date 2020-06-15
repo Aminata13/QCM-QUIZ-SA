@@ -2,6 +2,7 @@
 require_once('data/model.php');
 session_start();
 
+
 function displayUserPage($post) {
     $login = $post['username'];
     $password = $post['password'];
@@ -41,29 +42,6 @@ $post = array(
     'surname' => 'DIATTA',
     'file' => array('name' => 'test', 'type' => 'JPEG')
 );
-
-function addUser($post) {
-    $login = $post['username'];
-    $password = $post['password'];
-    $confirmPassword = $post['confirmPassword'];
-    $username = $post['username'];
-    $surname = $post['surname'];
-    $firstname = $post['firstname'];
-
-    //validations
-    if (empty($login) ||empty($password) || empty($confirmPassword) || empty($username) || empty($surname) || empty($firstname)) {
-        return 'error';
-    } elseif ($password !== $confirmPassword) {
-        return 'error';
-    } else {
-        //enregistrement du user dans la BD
-        $result = setUserAndAvatar($login, $password, $surname, $firstname);
-
-        if ($result != 1) {
-            echo 'error';
-        } 
-    }
-}
 
 function upload_image ($file='file') {
     $target_dir = "public/uploads/";

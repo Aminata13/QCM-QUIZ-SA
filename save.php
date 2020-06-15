@@ -1,15 +1,13 @@
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="dataTable_length" id="dataTable_length">
-                                    <label for="">
-                                        Montrer
-                                        <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" id="">
-                                            <option value="10">10</option>
-                                            <option value="15">15</option>
-                                            <option value="25">25</option>
-                                        </select>
-                                        Joueurs
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+<?php
+function is_string_inside ($tab, $string) {
+    $result = array();
+    foreach ($tab as $key => $value) {
+        if (strpos($key, $string) !== false) {
+            $result[] = $key;
+        }
+    }
+    return $result;
+}
+$post = ['simpleAnswer1' => 'champ1', 'simpleAnswer2' => 'champ2', 'simpleAnswer3' => 'champ3'];
+$result = is_string_inside($post, 'simpleAnswer');
+var_dump($result);
